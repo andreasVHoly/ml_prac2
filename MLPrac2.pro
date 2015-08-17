@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     perceptron.cpp \
-    testset.cpp
+    testset.cpp \
+    percepnetwork.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -13,5 +14,9 @@ qtcAddDeployment()
 HEADERS += \
     perceptron.h \
     testset.h \
-    set.h
+    set.h \
+    percepnetwork.h
+
+DISTFILES += \
+    test.txt
 
