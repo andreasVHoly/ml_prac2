@@ -1,0 +1,14 @@
+#blacklist errything
+*
+#whitelist all dirs
+!*/
+#whitelist all cpp and h files
+!*.cpp
+!*.h
+!*.txt
+!.gitignore
+!*.pgm
+!makefile
+!*.pro
+!*.pro.user
+!*.user
