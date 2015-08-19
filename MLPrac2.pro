@@ -9,7 +9,7 @@ SOURCES += main.cpp \
     percepnetwork.cpp
 
 include(deployment.pri)
-qtcAddDeployment()
+
 
 HEADERS += \
     perceptron.h \

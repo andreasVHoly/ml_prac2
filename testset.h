@@ -6,8 +6,9 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
-#include <set.h>
 #include <cstdlib>
+
+#include "set.h"
 
 namespace vhland002{
 class TestSet
@@ -26,6 +27,5 @@ private:
     std::vector<vhland002::Set> sets;
 
 };
-
 #endif // TESTSET_H
-}
+}//vhland002

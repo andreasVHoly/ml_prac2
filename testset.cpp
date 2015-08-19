@@ -38,6 +38,14 @@ void TestSet::readInTestSet(std::string filename){
     else{
         cout << "File read error" << endl;
     }
+    cout << "Test set read in (input 1, input 2, output): " << endl;
+    for (int i = 0; i < sets.size(); i++){
+        cout << "Case " << i+1 << ": ";
+        cout << sets[i].input1 << ", ";
+        cout << sets[i].input2 << ", ";
+        cout << sets[i].output << endl;
+    }
+
 }
 
 

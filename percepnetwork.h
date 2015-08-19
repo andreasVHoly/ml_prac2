@@ -10,7 +10,7 @@ class PercepNetwork
 public:
     PercepNetwork(TestSet set):set(set){}
 
-    int runFunction(Perceptron node);
+    int runFunction(float learningRate);
 
 private:
     TestSet set;
