@@ -8,7 +8,6 @@ SOURCES += main.cpp \
     testset.cpp \
     percepnetwork.cpp
 
-include(deployment.pri)
 
 
 HEADERS += \

@@ -1,7 +1,8 @@
 #ifndef PERCEPTRON_H
 #define PERCEPTRON_H
 
-#include <bitset>
+
+#include <cstdlib>
 namespace vhland002{
 
 
@@ -9,14 +10,21 @@ class Perceptron
 {
 public:
     //CONSTRUCTOR//
-    Perceptron(float weight, float learningRate, int target)
-        :weight(weight), learningRate(learningRate), target(target){}
+    Perceptron(float learningRate, int target)
+        :learningRate(learningRate), target(target){}
+
+
+
 
 
 
 
     //METHODS//
-    float recalculateWeight(int input);
+
+    float getInputs(int input1, int input2);
+
+    float recalculateWeight1();
+    float recalculateWeight2();
 
     //SETTERS//
     void setWeight(float value);
@@ -31,15 +39,14 @@ public:
     int getInput();
     int getOutput();
 
-private:
     //VARS//
-    float weight, learningRate;
+    float weight0 = -0.5f, weight1, weight2, learningRate, result;
     int target, input, output;
 
 };
 
 
 
-
-#endif // PERCEPTRON_H
 }//vhland002
+#endif // PERCEPTRON_H
+

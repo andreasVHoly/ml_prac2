@@ -3,19 +3,19 @@
 
 #include "testset.h"
 #include "perceptron.h"
+#include "set.h"
 
 namespace vhland002{
 class PercepNetwork
 {
 public:
-    PercepNetwork(TestSet set):set(set){}
+    PercepNetwork(std::vector<Set> set):set(set){}
 
     int runFunction(float learningRate);
 
-private:
-    TestSet set;
+    std::vector<Set> set;
 
 };
-
+}//vhland002
 #endif // PERCEPNETWORK_H
-}
+

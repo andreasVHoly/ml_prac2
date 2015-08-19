@@ -22,10 +22,11 @@ public:
     void readInTestSet(std::string filename);
 
 
-private:
+
     int size;
     std::vector<vhland002::Set> sets;
 
 };
-#endif // TESTSET_H
 }//vhland002
+#endif // TESTSET_H
+

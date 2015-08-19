@@ -21,8 +21,9 @@ int main(int argc, char * argv[])
     set.readInTestSet(fileName);
 
 
-
+    cout << "Running function" << endl;
     PercepNetwork network(set.sets);
+    cout << set.sets.size() << endl;
     network.runFunction(0.1f);
 
 
