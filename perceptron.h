@@ -10,8 +10,8 @@ class Perceptron
 {
 public:
     //CONSTRUCTOR//
-    Perceptron(float learningRate, int target)
-        :learningRate(learningRate), target(target){}
+    Perceptron(float learningRate)
+        :learningRate(learningRate){}
 
 
 
@@ -21,7 +21,9 @@ public:
 
     //METHODS//
 
-    float getInputs(int input1, int input2);
+    float getResult();
+    void setInputs(int input1, int input2);
+    void setWeights(float weight0, float weight1, float weight2);
 
     float recalculateWeight1();
     float recalculateWeight2();
@@ -40,8 +42,8 @@ public:
     int getOutput();
 
     //VARS//
-    float weight0 = -0.5f, weight1, weight2, learningRate, result;
-    int target, input, output;
+    float weight0, weight1, weight2, learningRate, result;
+    int target, input1, input2, output;
 
 };
 

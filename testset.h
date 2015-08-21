@@ -21,10 +21,10 @@ public:
 
     void readInTestSet(std::string filename);
 
-
+    void addSet(Set set);
 
     int size;
-    std::vector<vhland002::Set> sets;
+    std::vector<Set> sets;
 
 };
 }//vhland002

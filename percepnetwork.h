@@ -9,7 +9,13 @@ namespace vhland002{
 class PercepNetwork
 {
 public:
-    PercepNetwork(std::vector<Set> set):set(set){}
+
+
+    std::vector<Set> ORGate();
+    std::vector<Set> NANDGate();
+    void ANDGate(std::vector<Set> OR, std::vector<Set> NAND);
+
+
 
     int runFunction(float learningRate);
 

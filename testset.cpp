@@ -49,6 +49,10 @@ void TestSet::readInTestSet(std::string filename){
 
 }
 
+void TestSet::addSet(Set set){
+    sets.push_back(set);
+}
+
 
 }
 

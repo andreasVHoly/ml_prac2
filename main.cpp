@@ -9,25 +9,20 @@ int main(int argc, char * argv[])
 
     using namespace std;
     using namespace vhland002;
+    cout << "Program started..." << endl;
 
-    cout << "Program starting..." << endl;
-//    int setSize = atoi(argv[1]);
-//    string fileName = argv[2];
-    int setSize = 4;
-    string fileName = "test.txt";
+    PercepNetwork network;
 
-    TestSet set(setSize);
-    cout << "Reading in file " << fileName << endl;
-    set.readInTestSet(fileName);
+    cout << "\nRunning OR Gate..." << endl;
 
+    std::vector<Set> orSet = network.ORGate();
+    cout << "\nRunning NAND Gate..." << endl;
 
-    cout << "Running function" << endl;
-    PercepNetwork network(set.sets);
-    cout << set.sets.size() << endl;
-    network.runFunction(0.1f);
+    std::vector<Set>nandSet = network.NANDGate();
+    cout << "\nRunning XOR Gate..." << endl;
+    network.ANDGate(orSet, nandSet);
 
-
-    cout << "Program ended normally" << endl;
+    cout << "Program ended normally..." << endl;
     return 0;
 }
 
