@@ -250,8 +250,8 @@ void PercepNetwork::ANDGate(std::vector<Set> OR, std::vector<Set> NAND){
     value = rand()/double(RAND_MAX);//random number
     float weight2 = value;
     cout << "random weight2 is " << weight2<< endl;
-    //weight1 = 0.00008f;
-   //weight2 = 0.00003f;
+    weight1 = 0.00008f;
+    weight2 = 0.00003f;
 
     Set set1(OR[0].output,NAND[0].output,0);
     Set set2(OR[1].output,NAND[1].output,1);
@@ -259,10 +259,10 @@ void PercepNetwork::ANDGate(std::vector<Set> OR, std::vector<Set> NAND){
     Set set4(OR[3].output,NAND[3].output,0);
 
     TestSet XOR(4);
-    XOR.addSet(set4);
     XOR.addSet(set1);
     XOR.addSet(set2);
     XOR.addSet(set3);
+    XOR.addSet(set4);
 
     int results[4];
 
