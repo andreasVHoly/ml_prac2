@@ -13,13 +13,13 @@ int main(int argc, char * argv[])
 
     PercepNetwork network;
 
-    cout << "\nRunning OR Gate..." << endl;
+    cout << "\n****Running OR Gate****..." << endl;
 
     std::vector<Set> orSet = network.ORGate();
-    cout << "\nRunning NAND Gate..." << endl;
+    cout << "\n****Running NAND Gate****..." << endl;
 
     std::vector<Set>nandSet = network.NANDGate();
-    cout << "\nRunning XOR Gate..." << endl;
+    cout << "\n****Running AND Gate****..." << endl;
     network.ANDGate(orSet, nandSet);
 
     cout << "Program ended normally..." << endl;
