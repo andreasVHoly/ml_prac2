@@ -2,6 +2,7 @@
 #include "testset.h"
 #include "set.h"
 #include <iostream>
+#include <ctime>
 
 
 
@@ -30,10 +31,19 @@ std::vector<Set> PercepNetwork::ORGate(){
     //weight1 = 0.840188f;
    // weight2 = 0.394383f;
 
+
+    //old format
     Set set1(1,1,1);
     Set set2(1,0,1);
     Set set3(0,1,1);
     Set set4(0,0,0);
+
+//    Set set1(0,0,0);
+//    Set set2(1,1,1);
+//    Set set3(0,1,1);
+//    Set set4(1,0,1);
+
+
 
     TestSet ORTable(4);
     ORTable.addSet(set1);
@@ -137,6 +147,12 @@ std::vector<Set> PercepNetwork::NANDGate(){
     Set set3(0,1,0);
     Set set4(0,0,0);
 
+
+//    Set set1(0,0,0);
+//    Set set2(1,1,1);
+//    Set set3(0,1,0);
+//    Set set4(1,0,0);
+
     TestSet ANDTable(4);
     ANDTable.addSet(set1);
     ANDTable.addSet(set2);
@@ -225,6 +241,7 @@ std::vector<Set> PercepNetwork::NANDGate(){
             cout << results[y] << " , ";
 
         }
+        ANDTable.sets[y].output = results[y];
 
     }
     cout << endl << endl;
@@ -257,6 +274,11 @@ void PercepNetwork::ANDGate(std::vector<Set> OR, std::vector<Set> NAND){
     Set set2(OR[1].output,NAND[1].output,1);
     Set set3(OR[2].output,NAND[2].output,1);
     Set set4(OR[3].output,NAND[3].output,0);
+
+//    Set set1(OR[0].output,NAND[0].output,1);
+//    Set set2(OR[1].output,NAND[1].output,1);
+//    Set set3(OR[2].output,NAND[2].output,0);
+//    Set set4(OR[3].output,NAND[3].output,0);
 
     TestSet XOR(4);
     XOR.addSet(set1);
