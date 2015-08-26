@@ -4,6 +4,10 @@
 namespace vhland002{
 
 using namespace std;
+
+
+//NOTE: cout statements are there for debugging, commented out for now
+
 float Perceptron::recalculateWeight1(){
     weight1 += (learningRate * input1 * target);
     //cout << "new weight2 is " << weight1 << endl;
@@ -32,8 +36,8 @@ void Perceptron::setWeights(float weight0, float weight1, float weight2){
     this->weight1 = weight1;
     this->weight2 = weight2;
     //cout << "weight0  set to " << this->weight0 << endl;
-    cout << "weight1  set to " << this->weight1 << endl;
-    cout << "weight2  set to " << this->weight2 << endl;
+    //cout << "weight1  set to " << this->weight1 << endl;
+    //cout << "weight2  set to " << this->weight2 << endl;
 }
 
 void Perceptron::setInputs(int input1, int input2){
@@ -45,48 +49,9 @@ void Perceptron::setInputs(int input1, int input2){
 }
 
 
-
-
-//void Perceptron::setWeight(float value){
-//    this->weight = value;
-//}
-
-//void Perceptron::setLearningRate(float rate){
-//    this->learningRate = rate;
-//}
-
 void Perceptron::setTarget(int target){
     this->target = target;
 }
-
-//void Perceptron::setInput(int input){
-//    this->input = input;
-//}
-
-//void Perceptron::setOutput(int output){
-//    this->output = output;
-//}
-
-//float Perceptron::getWeight(){
-//    return weight;
-//}
-
-//float Perceptron::getLearningRate(){
-//    return learningRate;
-//}
-
-//int Perceptron::getTarget(){
-//    return target;
-//}
-
-//int Perceptron::getInput(){
-//    return input;
-//}
-
-//int Perceptron::getOutput(){
-//    return output;
-//}
-
 
 
 

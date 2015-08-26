@@ -19,8 +19,6 @@ class TestSet
 public:
     TestSet(int size):size(size){}
 
-    void readInTestSet(std::string filename);
-
     void addSet(Set set);
 
     int size;

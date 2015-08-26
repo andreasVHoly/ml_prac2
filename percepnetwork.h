@@ -14,12 +14,8 @@ public:
     std::vector<Set> ORGate();
     std::vector<Set> NANDGate();
     void ANDGate(std::vector<Set> OR, std::vector<Set> NAND);
+    bool debug = false;
 
-
-
-    int runFunction(float learningRate);
-
-    std::vector<Set> set;
 
 };
 }//vhland002

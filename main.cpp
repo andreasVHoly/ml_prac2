@@ -4,7 +4,7 @@
 #include "percepnetwork.h"
 
 
-int main(int argc, char * argv[])
+int main()
 {
 
     using namespace std;

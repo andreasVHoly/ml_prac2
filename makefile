@@ -27,11 +27,12 @@ perceptron.o:	perceptron.cpp	perceptron.h
 main.o:	main.cpp
 		$(CC) $(CCFLAGS) main.cpp -c
 	
-
+run:
+	./driver
 
 #if we want to clean all the compiled files	
 #to clean all .o files
 #to clean the driver file which is used to run the program
 clean:
 		@rm -f *.o
-		@rm -f program
+		@rm -f driver

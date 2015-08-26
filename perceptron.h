@@ -13,12 +13,6 @@ public:
     Perceptron(float learningRate)
         :learningRate(learningRate){}
 
-
-
-
-
-
-
     //METHODS//
 
     float getResult();

@@ -17,6 +17,5 @@ HEADERS += \
     set.h \
     percepnetwork.h
 
-DISTFILES += \
-    test.txt
+DISTFILES +=
 
